@@ -1,9 +1,6 @@
-/**
-  * Функция-обертка над XMLHttpRequest, осуществляющая запрос
-  * url - урл, по которому будет осуществляться запрос
-  * callback - функция, которая вызовется при успешном выполнении
-  * и первым параметром получит объект-результат запроса
-  */
+// Task 3. 14.2 XHR
+
+console.log("Task 3. 14.2 XHR");
 function useRequest(url, callback) {
     var xhr = new XMLHttpRequest();
     xhr.open('GET', url, true);
@@ -30,6 +27,7 @@ function useRequest(url, callback) {
 const resultNode = document.querySelector('.j-result');
 // Ищем кнопку, по нажатии на которую будет запрос
 const btnNode = document.querySelector('.j-btn-request');
+const errResultNode = document.querySelector('.j-err-result');
 
 /**
   * Функция обработки полученного результата
@@ -62,7 +60,12 @@ function displayResult(apiData) {
 btnNode.addEventListener('click', () => {
     const value = document.querySelector('input').value;
     console.log(value);
-    if (+value && +value != 0 && +value <= 30) {
+    if (+value && +value != 0 && +value <= 10) {
         useRequest(`https://picsum.photos/v2/list/?limit=${value}`, displayResult);
+        errResultNode.innerHTML = "число диапазоне";
+
+        return
     }
+    errResultNode.innerHTML = "число вне диапазона от 1 до 10";
+
 })
