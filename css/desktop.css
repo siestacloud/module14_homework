@@ -1,56 +1,21 @@
 @media screen and (min-width: 750px) {
     .title_text {
-        font-size: 3.75rem;
+        font-size: 3.35rem;
     }
 
     .title__subtext {
-        font-size: 1.125rem;
-        letter-spacing: 0.5em;
+        font-size: 1.2rem;
+        letter-spacing: 0.3em;
     }
-
-
 }
 
-
 @media screen and (min-width: 830px) {
-    .header {
-        /* имитация ограничивающего контейнера */
-        grid-template: 1fr / 1fr minmax(auto, 200px) minmax(auto, 1200px) 1fr;
-        /* выравнивание по У */
-    }
-
-
-    .header__logo {
-        grid-column: 2/3;
-    }
-
-    .header__list {
-        text-align: end;
-    }
-
-
-
-    .header__menu {
-        grid-column: 3/4;
-    }
-
-
-    .header__list {
-        display: grid;
-        /* grid-auto-flow: column; */
-        grid-template: 1fr/ repeat(4, minmax(10px, 1fr));
-
-        justify-items: end;
-    }
-
-
-
     .main {
 
         display: grid;
         /* имитация ограничивающего контейнера */
         grid-template-columns: 1fr minmax(auto, 400px) minmax(auto, 1200px) 1fr;
-        grid-template-rows: 200px 1fr;
+        grid-template-rows: 85px 1fr;
 
         grid-template-areas:
             "title title"
@@ -79,22 +44,15 @@
         grid-template-columns: repeat(2, minmax(200px, 1fr));
         gap: 15px;
     }
-
-
-
-
-.content__item{
-    margin:  0px;
+    .content__item {
+        margin: 0px;
+    }
 }
-
-}
-
-
 
 @media screen and (min-width: 1400px) {
 
     .title_text {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
     .title__subtext {

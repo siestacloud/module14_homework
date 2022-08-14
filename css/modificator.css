@@ -6,3 +6,11 @@
 .mod__vert_margin{
     margin: 15px 0px;
 }
+
+.mod-white{
+    color: #fff;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+}

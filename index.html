@@ -10,43 +10,47 @@
     <link rel="stylesheet" href="./css/phone.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/modificator.css" />
-
     <title>AJAX</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header mod__hor_margin">
-            <a href="" class="header__logo">logo</a>
-            <div class="header__menu">
-                <ul class="header__list">
-                    <li>
-                        <a href="" class="header__link">about</a>
-                    </li>
-                    <li>
-                        <a href="" class="header__link">promo</a>
-                    </li>
-                    <li>
-                        <a href="" class="header__link">accont</a>
-                    </li>
-                    <li>
-                        <a href="" class="header__link">feedback</a>
-                    </li>
-
-                </ul>
-            </div>
+        <header class="header">
         </header>
         <main class="main">
-            <section class="title mod__hor_margin mod__vert_margin">
+            <section class="title mod__hor_margin">
                 <h1 class="title_text">Модуль 14. AJAX </h1>
-                <h2 class="title__subtext">task 3</h2>
             </section>
-            <!-- сайдбар -->
+            <!--  ЗАДАНИЯ -->
             <aside class="sidebar mod__hor_margin">
+
+                <!-- ЗАДАНИЕ 1 -->
+                <h2 class="title__subtext">task 1</h2>
                 <div class="sidebar__item item2" tabindex="1">
                     <div class="box">
                         <div class="diamond">
-                            <input class="input_box" type="text" placeholder="Input...">
+                            <div class="mod-white">result in console</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ЗАДАНИЕ 2 -->
+                <h2 class="title__subtext">task 2</h2>
+                <div class="sidebar__item item2" tabindex="1">
+                    <div class="box">
+                        <div class="diamond">
+                            <div class="mod-white">result in console</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ЗАДАНИЕ 3 -->
+                <h2 class="title__subtext">task 3</h2>
+                <div class="sidebar__item item2" tabindex="1">
+                    <div class="box">
+                        <div class="diamond">
+                            <input class="input_box j-task3-1" type="text" placeholder="Input...">
                             <button class="button__items size j-btn-request">
                                 <div class="button__push">send</div>
                             </button>
@@ -54,21 +58,64 @@
                         <div class="tooltip j-err-result">введите число (диапазон от 1 до 10)</div>
                     </div>
                 </div>
+
+                <!-- ЗАДАНИЕ 4 раздел 14.4 -->
+                <h2 class="title__subtext">task 4.1</h2>
+                <div class="sidebar__item item2" tabindex="1">
+                    <div class="box">
+                        <div class="diamond">
+                            <div class="mod-white">result in console</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ЗАДАНИЕ 4 раздел 14.5 -->
+                <h2 class="title__subtext">task 4.2</h2>
+                <div class="sidebar__item item2" tabindex="1">
+                    <div class="box">
+                        <div class="diamond">
+                            <input class="input_box j-task4-1" type="text" placeholder="Input...">
+                            <input class="input_box j-task4-2" type="text" placeholder="Input...">
+                            <button class="button__items size j-btn-request-task4">
+                                <div class="button__push">send</div>
+                            </button>
+                        </div>
+                        <div class="tooltip j-err-result-taks4">введите числа (диапазон от 100 до 300)</div>
+                    </div>
+                </div>
+
+                <!-- ЗАДАНИЕ 5 финальное задание -->
+                <h2 class="title__subtext">task 5</h2>
+                <div class="sidebar__item item2" tabindex="1">
+                    <div class="box">
+                        <div class="diamond">
+                            <input class="input_box j-task5-1" type="text" placeholder="№ стр...">
+                            <input class="input_box j-task5-2" type="text" placeholder="Лимит...">
+                            <button class="button__items size j-btn-request-task5">
+                                <div class="button__push">запрос</div>
+                            </button>
+                        </div>
+                        <div class="tooltip j-err-result-taks5">введите числа (диапазон от 1 до 10)</div>
+                    </div>
+                </div>
             </aside>
-            <!-- блок с основным контентом -->
+
+            <!-- секция для вывода результата заданий -->
             <section class="content">
                 <div class="content__items mod__hor_margin j-result">
                 </div>
             </section>
         </main>
-        <footer class="footer mod__hor_margin">
-            <div class="footer__copy">Copy 2022</div>
-            <div class="footer__text">Aura | enterprise edition</div>
+        <footer class="footer">
         </footer>
     </div>
 
-    <script src="./task_3.js"></script>
-    <script src="./task_4.js"></script>
+    <!-- подключение js -->
+    <script src="./js/task_1_2/task_1-2.js"></script>
+    <script src="./js/task_3/task_3.js"></script>
+    <script src="./js/task_4/task_4-1.js"></script>
+    <script src="./js/task_4/task_4-2.js"></script>
+    <script src="./js/task_5/task_5.js"></script>
 
 </body>
 

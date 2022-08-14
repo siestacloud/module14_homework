@@ -3,10 +3,7 @@
     min-height: 100vh;
     overflow: hidden;
     display: grid;
-
-
-    grid-template: minmax(80px, auto) 1fr minmax(50px, auto) / 1fr;
-
+    grid-template: minmax(30px, auto) 1fr minmax(50px, auto) / 1fr;
     grid-template-areas:
         "header"
         "main"
@@ -15,26 +12,11 @@
 
 .header {
     grid-area: header;
-    display: grid;
-    justify-content: center;
-    grid-template: 1fr 1fr/ 1fr;
 }
-
-.header__logo{
-    text-align: center;
-}
-
-.header__list {
-    text-align: center;
-}
-
-
 /* main */
-
 .main {
     grid-area: main;
 }
-
 .title {
     align-items: center;
     text-align: center;
@@ -42,14 +24,10 @@
 .content__items {
     justify-content: center;
 }
-
 .content__item{
     margin: 15px 0px;
 }
-
-
-
-
+/* footer */
 .footer {
     grid-area: footer;
     display: grid;

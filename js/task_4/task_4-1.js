@@ -12,17 +12,14 @@ const myPromise = new Promise((resolve, reject) => {
             resolve(val);
         }
         reject(val);
-
     }, 3000)
 });
 
-// Выполняем promise
+// Выполняю promise
 myPromise
     .then((result) => {
-        console.log(`Завершено успешно. Сгенерированное число — ${result}` );
+        console.log(`Завершено успешно. Сгенерированное число — ${result} (task 4)` );
     })
     .catch((error) => {
-        console.log(`Завершено с ошибкой. Сгенерированное число — ${error}`);
+        console.log(`Завершено c ошибкой. Сгенерированное число — ${error} (task 4)`);
     })
-
-
